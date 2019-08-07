@@ -9,6 +9,11 @@ function initialize() {
     $('#help-section').data('state', '0');
     $('#hero').data('state', '0');
     console.log('App loaded...')
+    closeLoadingScreen();
+}
+
+function closeLoadingScreen() {
+    $('#loading').hide(1000);
 }
 
 // watches for click on "Show my IP" button
@@ -116,6 +121,9 @@ function watchCustomIPSubmit() {
 // display alert window
 function alertShow() {
     $('#alert-window').show(100);
+    $('#alert-window').css({
+        'z-index': '999',
+    })
     alertClose();
 }
 
@@ -123,6 +131,9 @@ function alertShow() {
 function alertClose() {
     $('#alert-close').click(function() {
         $('#alert-window').hide();
+        $('#alert-window').css({
+            'z-index': '-2',
+        })
     })
 }
 
