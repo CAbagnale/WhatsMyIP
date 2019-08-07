@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script id="g-api" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnwktLifUmea_EUZFq_KpTA0n-vr1HFbc"></script>
+    <title>What's my IP?</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-button">
+            <button id="home-button" name="go home">&#8962</button>
+        </div>
+    </nav>
+    <section id="hero">
+        <button class="buttons buttonfx" name="Show my IP" id="button-show-ip">Show my IP</button>
+        <button class="buttons buttonfx" name="Enter custom IP" id="button-custom-ip">Enter custom IP</button>
+        <div class="hidden" id="ip-info">
+            <h1><span id="ip-label"></span><span id="ip-display"></span></h1>
+            <h2><span id="city-state"></span></h2>
+            <ul>
+                <li id="country"></li>
+                <li id="zip"></li>
+                <li id="longitude"></li>
+                <li id="latitude"></li>
+                <li id="map"></li>
+            </ul>
+        </div>
+        <div>
+            <form id="custom-ip-form" class="hidden">
+                <label for="Custom IP" id="custom-ip-label">Enter Custom IP:</label>
+                <input type="text" name="Custom IP" id="input-custom-ip" placeholder="Ex: 71.167.7.33">
+                <button class="buttons buttonfx" name="Submit" id="submit-ip">Submit</button>
+            </form>
+        </div>
+        <div id="help-section">
+            <button id="help-button" name="Need help?"><strong>?</strong></button>
+            <div id="help-info" hidden="true">
+                <h3>Show my IP:</h2> 
+                <p>Displays your public 
+                    <a class="wikipedia-link" href="https://en.wikipedia.org/wiki/IP_address" target="_blank">IP address</a>
+                     and detailed location information.</p>
+                <h3>Enter custom IP:</h2> 
+                <p>Displays detailed location information about an 
+                    <a class="wikipedia-link" href="https://en.wikipedia.org/wiki/IP_address" target="_blank">IP address</a>
+                     other than your own.</p>
+            </div>
+        </div>
+        <div id="alert-window" class="hidden">
+            <label for="alert-close">Invalid IP address submitted.</label>
+            <button class="buttons buttonfx" name="OK" id="alert-close">OK</button>
+        </div>
+    </section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
