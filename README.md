@@ -6,7 +6,7 @@
 
 ## About
 
-### An information privacy app. 
+### An informational privacy app. 
 
 Displays the public IP and geolocation information of the computer accessing the app. The geolocation information about other IP addresses can also be looked up. 
 
