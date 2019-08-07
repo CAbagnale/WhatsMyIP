@@ -1,6 +1,6 @@
 # What's My IP?
 
-![Screenshot](img/screenshot.png?raw=true "What's My IP?")
+![Screenshot](img/screenshot.png "What's My IP?")
 
 # [LIVE APP](http://cabagnale.com)
 
