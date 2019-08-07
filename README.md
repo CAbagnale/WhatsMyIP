@@ -2,7 +2,7 @@
 
 ![Screenshot](https://i.imgur.com/qOIAXBo.png)
 
-# [LIVE APP](http://cabagnale.com) [REPO](https://github.com/CAbagnale/WhatsMyIP)
+# [LIVE APP](http://cabagnale.com)   [REPO](https://github.com/CAbagnale/WhatsMyIP)
 
 ## About
 
