@@ -1,6 +1,6 @@
 # What's My IP?
 
-![Screenshot](img/screenshot.png)
+![Screenshot](https://i.imgur.com/qOIAXBo.png)
 
 # [LIVE APP](http://cabagnale.com)
 
